@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Coding Quiz</title>
+  </head>
+  <body>
+    <header>
+      <h1>Coding Quiz</h1>
+    </header>
+
+    <section class="highscore">
+      <h2 id="highscoreLink">View High Scores</h2>
+      <h2 id="timer"></h2>
+    </section>
+
+    <section class="sect" id="begining">
+      <p>
+        You have 60 seconds to answer 5 questions,<br />
+        If a question is answered incorrectly 10 seconds will be removed from
+        timer<br /><br />
+        Click start quiz to begin
+      </p>
+      <button id="start">Start Quiz</button>
+    </section>
+
+    <section class="sect" id="questionSelect">
+      <h3 id="question"></h3>
+      <p class="option" id="A" onclick="validateAnswer('A')"></p>
+      <p class="option" id="B" onclick="validateAnswer('B')"></p>
+      <p class="option" id="C" onclick="validateAnswer('C')"></p>
+      <p class="option" id="D" onclick="validateAnswer('D')"></p>
+    </section>
+
+    <section class="sect" id="gameOver">
+      <h2 class="final">Game Over</h2>
+      <p id="score"></p>
+      <label for="initials">Enter initals</label>
+      <input type="text" name="initials" id="initials" />
+      <button id="submitBtn">Submit</button>
+    </section>
+
+    <section class="sect" id="highScorePage">
+      <h2>High Scores</h2>
+      <div id="highScores"></div>
+      <button id="main">Main Page</button>
+      <button id="clear">Clear High Scores</button>
+    </section>
+    <link rel="stylesheet" href="./assets/script.js" />
+  </body>
+</html>
