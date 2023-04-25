@@ -9,23 +9,24 @@
   </head>
   <body>
     <header>
-      <h1>Coding Quiz</h1>
+      <h1>Coding Quiz Challenge</h1>
     </header>
 
-    <section class="highscore">
-      <h2 id="highscoreLink">View High Scores</h2>
+    <section class="highScore">
+      <h2 id="highScoreLink">View High Scores</h2>
       <h2 id="timer"></h2>
     </section>
 
-    <section class="sect" id="begining">
+    <section class="sect" id="intro">
       <p>
-        You have 60 seconds to answer 5 questions,<br />
-        If a question is answered incorrectly 10 seconds will be removed from
-        timer<br /><br />
-        Click start quiz to begin
+        You will have 60 seconds to answer up to 5 quesitons, <br />If you
+        answer a question wrong then 10 seconds will be taken from timer.
+        <br /><br />Click "Start Quiz" to begin.
       </p>
       <button id="start">Start Quiz</button>
     </section>
+
+    <div class="sect" id="rate"></div>
 
     <section class="sect" id="questionSelect">
       <h3 id="question"></h3>
@@ -49,6 +50,7 @@
       <button id="main">Main Page</button>
       <button id="clear">Clear High Scores</button>
     </section>
-    <link rel="stylesheet" href="./assets/script.js" />
+
+    <script src="assets/script.js"></script>
   </body>
 </html>
