@@ -20,5 +20,34 @@ const questions = [
         optionD: "All of the above.",
         answer: "D",
     },
-
-]
+{
+    prompt: "Which of the following is the correct syntax to redirect a url using JavaScript?",
+    optionA: " document.location='http://www.newlocation.com';",
+    optionB: "browser.location='http://www.newlocation.com';",
+    optionC: "browser.location='http://www.newlocation.com';",
+    optionD: " window.location='http://www.newlocation.com';",
+    answer: "D",
+},
+{
+    prompt: "Which built-in method returns the index within the calling String object of the first occurrence of the specified value?",
+    optionA: "getIndex()",
+    optionB: "location()",
+    optionC: "indexOf()",
+    optionD: "None of the above.",
+    answer: "C",
+},
+{
+    prompt: " All user-defined objects and built-in objects are descendants of an object called Object?",
+    optionA: "true",
+    optionB: "false",
+    answer: "A",
+},
+{
+    prompt: "Which of the following function of Array object returns a new array comprised of this array joined with other array(s) and/or value(s)?",
+    optionA: "concat()",
+    optionB: "pop()",
+    optionC: "push()",
+    optionD: "some()",
+    answer: "A",
+},
+];
