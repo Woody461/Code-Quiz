@@ -23,13 +23,9 @@ THEN I can save my initials and score
   </p>
 
   <p>
-  <img src="assets/Screenshot 4.png" width="350" title="hover text">
+  <img src="assets/Screenshot2.png" width="350" title="hover text">
   </p>
 
   <p>
-  <img src="assets/Screenshot 3.png" width="350" title="hover text">
+  <img src="assets/Screenshot3.png" width="350" title="hover text">
   </p>
-
-  <p>
-   <img src="assets/Screenshot 2.png" width="350" title="hover text">
-</p>

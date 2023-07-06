@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <title>Coding Quiz</title>
+    <title>Code Quiz</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Coding Quiz Challenge</h1>
-    </header>
-
-    <section class="highScore">
-      <h2 id="highScoreLink">View High Scores</h2>
-      <h2 id="timer"></h2>
-    </section>
-
-    <section class="sect" id="intro">
-      <p>
-        You will have 60 seconds to answer up to 5 quesitons, <br />If you
-        answer a question wrong then 10 seconds will be taken from timer.
-        <br /><br />Click "Start Quiz" to begin.
-      </p>
-      <button id="start">Start Quiz</button>
-    </section>
-
-    <div class="sect" id="rate"></div>
-
-    <section class="sect" id="questionSelect">
-      <h3 id="question"></h3>
-      <p class="option" id="A" onclick="validateAnswer('A')"></p>
-      <p class="option" id="B" onclick="validateAnswer('B')"></p>
-      <p class="option" id="C" onclick="validateAnswer('C')"></p>
-      <p class="option" id="D" onclick="validateAnswer('D')"></p>
-    </section>
-
-    <section class="sect" id="gameOver">
-      <h2 class="final">Game Over</h2>
-      <p id="score"></p>
-      <label for="initials">Enter initals</label>
-      <input type="text" name="initials" id="initials" />
-      <button id="submitBtn">Submit</button>
-    </section>
-
-    <section class="sect" id="highScorePage">
-      <h2>High Scores</h2>
-      <div id="highScores"></div>
-      <button id="main">Main Page</button>
-      <button id="clear">Clear High Scores</button>
-    </section>
-
+    <h1 class="text-center mt-8">Code Quiz</h1>
+    <h1 class="text-center mt-8">
+      This is a Javascript quiz <br />
+      you have 60 seconds to answer all the questions if you get an answer wrong
+      it will remove 10 seconds <br />
+    </h1>
+    <div id="quiz-container" class="mt-10 mx-auto max-w-md">
+      <div id="question-container"></div>
+      <button
+        id="start-btn"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-4"
+      >
+        Start
+      </button>
+      <div id="timer-container" class="text-center">
+        Time: <span id="timer">0</span>
+      </div>
+      <div id="feedback-container" class="text-center mt-4"></div>
+      <div id="result-container" class="text-center mt-4"></div>
+      <form id="initials-form" class="text-center hidden">
+        <label for="initials">Enter initials:</label>
+        <input
+          type="text"
+          id="initials"
+          required
+          class="px-2 py-1 rounded-md border border-gray-300"
+        />
+        <button
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-2"
+        >
+          Submit
+        </button>
+      </form>
+      <div id="high-score-container" class="text-center mt-4"></div>
+    </div>
     <script src="assets/script.js"></script>
   </body>
 </html>
